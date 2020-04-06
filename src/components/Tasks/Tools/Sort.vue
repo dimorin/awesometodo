@@ -1,5 +1,5 @@
 <template>
-  <q-select v-model="sortBy" emit-value map-options outlined :options="options" label="Label (stacked)" stack-label class="col" />
+  <q-select v-model="sortBy" emit-value map-options outlined :options="options" label="Sort by" stack-label class="col" />
 </template>
 
 <script>

@@ -1,12 +1,19 @@
 <template>
     <div class="row q-mb-sm">
-        <q-input outlined :value="name" @input="$emit('update:name',$event)" label="Task name" class="col" :rules="[val => !!val || 'Field is required']" ref="name" autofocus clearable />
+        <q-input outlined :value="name" @input="$emit('update:name',$event)" label="Task name" class="col" 
+        :rules="[val => !!val || 'Field is required']" ref="name" autofocus clearable 
+        v-select-all
+        />
     </div>
 </template>
 
 <script>
+import {selectAll} from 'src/directives/directive-select-all.js'
 export default {
-    props:['name']
+    props:['name'],
+    directives:{
+        selectAll
+    },
 }
 </script>
 

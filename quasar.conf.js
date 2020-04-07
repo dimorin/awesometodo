@@ -44,7 +44,7 @@ module.exports = function (ctx) {
       all: 'auto',
 
       components: [
-        'QBanner','QScrollArea','QToggle'
+        'QBanner','QScrollArea','QToggle','QTabPanels', 'QTabPanel'
       ],
       directives: [
         'TouchHold'

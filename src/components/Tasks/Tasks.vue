@@ -1,5 +1,5 @@
 <template>
-    <q-item @click="updateTask({ id:id, updates:{completed:!task.completed}})" :class="!task.completed ? 'bg-orange-1':'bg-green-1'" 
+    <q-item @click="updateTask({ id:id, updates:{completed:!task.completed}})" :class="!task.completed ? 'bg-blue-1':'bg-teal-1'" 
     v-touch-hold:1000.mouse="showEditTaskModal"
     clickable v-ripple>
         <q-item-section side top>
@@ -28,7 +28,7 @@
         <q-item-section side>
             <div class="row">
                 <q-btn flat round dense color="primary" icon="edit" @click.stop="showEditTaskModal" />    
-            <q-btn flat round dense color="red" icon="delete" @click.stop="promptToDelete(id)" />    <!-- click에stop을 붙이면 parent에 이벤트를 전달하지 않는다. -->
+            <q-btn flat round dense color="primary" icon="delete" @click.stop="promptToDelete(id)" />    <!-- click에stop을 붙이면 parent에 이벤트를 전달하지 않는다. -->
             </div>            
         </q-item-section>        
         

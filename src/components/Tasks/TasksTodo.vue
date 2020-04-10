@@ -5,7 +5,7 @@
         leave-active-class="animated zoomOut absolute-top"
         >
         <div>
-            <list-header v-if="!settings.showTasksInOneList" bgColor="bg-orange-4">Todo</list-header>
+            <list-header v-if="!settings.showTasksInOneList" bgColor="bg-blue">Todo</list-header>
             <q-list bordered separator>      
                 <task v-for="(task,key) in tasksTodo" :key="key" :task="task" :id="key"></task>       
             </q-list>

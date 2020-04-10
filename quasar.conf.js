@@ -7,7 +7,7 @@ module.exports = function (ctx) {
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/cli-documentation/boot-files
     boot: [
-      'axios'
+      'axios','firebase', 'router-auth'
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
@@ -44,7 +44,7 @@ module.exports = function (ctx) {
       all: 'auto',
 
       components: [
-        'QBanner','QScrollArea','QToggle','QTabPanels', 'QTabPanel'
+        'QBanner','QScrollArea','QToggle','QTabPanels', 'QTabPanel','QSpinner'
       ],
       directives: [
         'TouchHold'
@@ -52,7 +52,7 @@ module.exports = function (ctx) {
 
       // Quasar plugins
       plugins: [
-        'Dialog','LocalStorage',
+        'Dialog','LocalStorage','Notify'
       ]
     },
 

@@ -1,6 +1,7 @@
 # Awesome Todo (awesome-todo)
-
-A Quasar Framework app
+A Quasar Framework app<br>
+todo list app<br>
+[https://awesometodoquasar.netlify.app](https://awesometodoquasar.netlify.app)
 
 ## Install the dependencies
 ```bash
